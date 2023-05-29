@@ -1,7 +1,7 @@
 from flask import Flask, render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
+import os
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pratham:lU7tAtBQFZnAARK0psAhsIfNfVoIxMVI@dpg-chq827u7avjb90ludveg-a.oregon-postgres.render.com/todo_lsbr"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
